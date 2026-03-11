@@ -10,7 +10,7 @@ graph TD
     
     subPages[Pages]
     Index[pages/index.tsx]
-    StockView[pages/stocks/[ticker].tsx]
+    StockView["pages/stocks/[ticker].tsx"]
     APIChart[pages/api/chart.ts]
     
     subComponents[Components]
