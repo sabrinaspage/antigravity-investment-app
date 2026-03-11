@@ -67,3 +67,13 @@ This application was generated and built from scratch using **Antigravity**, the
 2. **Project Setup**: Automated the setup of a Next.js environment by running shell scripts and configuring the Tailwind v3 setup requested by the user.
 3. **Execution**: Crafted custom React components (`Layout`, `NewsFeed`, `StockChart`), wired them together to form the dynamic `/stocks/[ticker]` page, and constructed the server-side API integrations using `yahoo-finance2`.
 4. **Autonomous Testing**: Used a robust browser subagent to *autonomously* open Google Chrome, navigate to the localhost app, input search terms, and visually/programmatically verify that the layout and data-loading worked correctly. When Antigravity found a serialization crash with Date objects from the API, it analyzed the stack trace, updated the types/JSON parsers on the server side, and verified the fix worked without human intervention!
+
+### Browser Agent Demos
+
+Here are the actual recordings captured by the Antigravity Browser Agent while it autonomously verified the application functioning:
+
+**1. Generating the Project & Searching**
+![Initial Demo Flow](public/demo_flow.webp)
+
+**2. Verifying the Live Data Dashboard**
+![Dashboard Verification](public/verify_dashboard.webp)
